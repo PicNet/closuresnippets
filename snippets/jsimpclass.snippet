@@ -1,0 +1,65 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>jsimpclass</Title>
+    <Author>PicNet Pty Ltd</Author>
+    <Shortcut>jsimpclass</Shortcut>
+    <Description>A sub class of an interface including provide and depend calls.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+			<Literal>
+        <ID>classcomments</ID>				
+        <Default>Comments describing this class</Default>
+				<ToolTip>Comments describing this class</ToolTip>
+      </Literal>
+			<Literal>
+        <ID>namespace</ID>
+        <ToolTip>The name of this class' namespace</ToolTip>
+        <Default>NameSpace</Default>
+      </Literal>
+      <Literal>
+        <ID>classname</ID>
+        <ToolTip>The name of this class</ToolTip>
+        <Default>ClassName</Default>
+      </Literal>
+			<Literal>
+        <ID>implements</ID>
+        <ToolTip>The name of the implemented interface</ToolTip>
+        <Default>Implements</Default>
+      </Literal>
+			<Literal>
+        <ID>require</ID>
+        <ToolTip>Classes to import</ToolTip>
+        <Default>Requires</Default>
+      </Literal>
+			<Literal>
+        <ID>param1</ID>
+        <ToolTip>The name of the first constructor parameter.</ToolTip>
+        <Default>param1</Default>
+      </Literal>
+			<Literal>
+        <ID>contents</ID>
+        <ToolTip>The contents of the class.</ToolTip>
+        <Default>Class Contents</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="jscript"><![CDATA[/**
+ * @fileoverview $classcomments$
+ *
+ */
+goog.provide('$namespace$.$classname$');
+goog.require('$require$');
+/**
+ * @constructor
+ * @implements {$namespace$.$implements$}
+ * @param {string} $param1$ A sample parameter.
+ */
+$namespace$.$classname$ = function($param1$) {
+	$contents$
+};
+]]></Code>
+  </Snippet>
+</CodeSnippet>

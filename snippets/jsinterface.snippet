@@ -1,0 +1,51 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>jsinterface</Title>
+    <Author>PicNet Pty Ltd</Author>
+    <Shortcut>jsinterface</Shortcut>
+    <Description>A standard interface in javascript including provide and depend calls.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+			<Literal>
+        <ID>interfacecomments</ID>
+        <Default>Comments describing this interface</Default>
+      </Literal>
+			<Literal>
+        <ID>namespace</ID>
+        <ToolTip>The name of this interface's namespace</ToolTip>
+        <Default>NameSpace</Default>
+      </Literal>
+      <Literal>
+        <ID>interfacename</ID>
+        <ToolTip>The name of this interface</ToolTip>
+        <Default>InterfaceName</Default>
+      </Literal>
+			<Literal>
+        <ID>require</ID>
+        <ToolTip>Classes to import</ToolTip>
+        <Default>Requires</Default>
+      </Literal>
+			<Literal>
+        <ID>methodname</ID>
+        <ToolTip>A method definition in this interface.</ToolTip>
+        <Default>MethodName</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="jscript"><![CDATA[/**
+ * @fileoverview $interfacecomments$
+ *
+ */
+goog.provide('$namespace$.$interfacename$');
+goog.require('$require$');
+/**
+ * @interface
+ */
+$namespace$.$interfacename$ = function() {};
+$namespace$.$interfacename$.prototype.$methodname$ = function() {};
+]]></Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,36 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>jsprivate</Title>
+    <Author>PicNet Pty Ltd</Author>
+    <Shortcut>jsprivate</Shortcut>
+    <Description>An private statment for a 'this.xxx' attribute.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+			<Literal>
+        <ID>typename</ID>
+        <ToolTip>The name of this attribute's type</ToolTip>
+        <Default>TypeName</Default>
+      </Literal>
+      <Literal>
+        <ID>attrname</ID>
+        <ToolTip>The name of this attribute</ToolTip>
+        <Default>AttributeName</Default>
+      </Literal>
+			<Literal>
+        <ID>declaration</ID>
+        <ToolTip>The initial declaration of this attribute</ToolTip>
+        <Default>null</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="jscript"><![CDATA[		/**     
+		 * @type {$typename$}
+     * @private
+     */
+    this.$attrname$ = $declaration$;
+]]></Code>
+  </Snippet>
+</CodeSnippet>

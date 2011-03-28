@@ -1,0 +1,39 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>jsenum</Title>
+    <Author>PicNet Pty Ltd</Author>
+    <Shortcut>jsenum</Shortcut>
+    <Description>A standard javascript enumeration.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+			<Literal>
+        <ID>enumcomments</ID>
+        <Default>Comments describing this enumeration</Default>
+				<ToolTip>Comments describing this enumeration</ToolTip>
+      </Literal>
+			<Literal>
+        <ID>namespace</ID>
+        <ToolTip>The name of this class' namespace</ToolTip>
+        <Default>NameSpace</Default>
+      </Literal>
+      <Literal>
+        <ID>enumname</ID>
+        <ToolTip>The name of this enumeration</ToolTip>
+        <Default>EnumName</Default>
+      </Literal>						
+    </Declarations>
+    <Code Language="jscript"><![CDATA[/**
+ * $enumcomments$
+ * @enum {string}
+ */
+$namespace$.$enumname$ = {
+  ON: 'on',
+  OFF: 'off'
+};
+]]></Code>
+  </Snippet>
+</CodeSnippet>

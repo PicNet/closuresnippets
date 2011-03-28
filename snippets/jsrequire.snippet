@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>jsrequire</Title>
+    <Author>PicNet Pty Ltd</Author>
+    <Shortcut>jsrequire</Shortcut>
+    <Description>A require statement.</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+			<Literal>
+        <ID>namespace</ID>
+        <ToolTip>The name of this class' namespace</ToolTip>
+        <Default>NameSpace</Default>
+      </Literal>
+      <Literal>
+        <ID>require</ID>
+        <ToolTip>Classes to import</ToolTip>
+        <Default>Requires</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="jscript"><![CDATA[goog.require('$namespace$.$require$');
+]]></Code>
+  </Snippet>
+</CodeSnippet>
